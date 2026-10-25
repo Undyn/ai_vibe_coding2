@@ -1,4 +1,4 @@
-const state = { target: new Date('2024-09-14T19:00:00'), theme: 'dawn' };
+const state = { target: new Date('2026-12-31T19:00:00'), theme: 'dawn' };
 const $ = (selector) => document.querySelector(selector);
 
 function pad(value) { return String(Math.max(0, value)).padStart(2, '0'); }
