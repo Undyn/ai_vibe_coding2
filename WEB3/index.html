@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f5f2e9">
+	<title>Pocket Pilot</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<main class="page-shell">
+		<header class="topbar">
+			<a class="wordmark" href="#game" aria-label="Pocket Pilot home">
+				<span class="wordmark-mark" aria-hidden="true">P</span>
+				<span>POCKET PILOT</span>
+			</a>
+			<span class="edition-label">ARCADE FLIGHT No. 01</span>
+		</header>
+
+		<section class="game-layout" id="game" aria-labelledby="game-title">
+			<div class="intro">
+				<p class="eyebrow"><span class="status-dot"></span> FLIGHT SCHOOL IS OPEN</p>
+				<h1 id="game-title">Keep your<br><em>head in the clouds.</em></h1>
+				<p class="intro-copy">One little plane. A very big sky. How far can you fly?</p>
+			</div>
+
+			<div class="game-frame">
+				<div class="game-topline" aria-hidden="true">
+					<span>FLIGHT SIMULATOR</span>
+					<span class="live-label"><span></span> LIVE</span>
+				</div>
+				<div class="canvas-wrap">
+					<canvas id="game-canvas" width="480" height="640" aria-label="Pocket Pilot game. Press Space, Arrow Up, or click to fly through the gates." role="img"></canvas>
+					<div class="game-overlay" id="game-overlay">
+						<p class="overlay-kicker" id="overlay-kicker">READY FOR TAKEOFF?</p>
+						<h2 id="overlay-title">Clear skies<br>ahead.</h2>
+						<button class="start-button" id="start-button" type="button">
+							<span id="button-label">Start flight</span>
+							<span class="button-arrow" aria-hidden="true">&#8594;</span>
+						</button>
+						<p class="overlay-hint" id="overlay-hint">Click, tap, or press space to rise</p>
+					</div>
+					<div class="score-display" aria-label="Score">
+						<span class="score-label">DISTANCE</span>
+						<span class="score-value" id="score-value">0</span>
+					</div>
+				</div>
+				<div class="game-footline">
+					<span>ALTITUDE <strong>KEEP IT UP</strong></span>
+					<span>BEST <strong id="best-value">0</strong></span>
+				</div>
+			</div>
+
+			<footer class="controls-row">
+				<span class="control-instruction"><kbd>SPACE</kbd><span>or</span><kbd>&#8593;</kbd><span>to flap</span></span>
+				<span class="control-instruction"><kbd>CLICK</kbd><span>or tap anywhere</span></span>
+			</footer>
+		</section>
+
+		<div class="page-stamp" aria-hidden="true">BUILT FOR THE JOY OF THE JOURNEY</div>
+		<div class="sr-only" id="game-announcement" aria-live="polite"></div>
+	</main>
+</body>
+</html>

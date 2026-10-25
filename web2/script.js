@@ -41,3 +41,4 @@ document.querySelectorAll('[data-quick]').forEach((button) => button.addEventLis
 $('#shareButton').addEventListener('click', async () => { try { await navigator.clipboard.writeText(window.location.href); } catch { /* Clipboard may be unavailable for local files. */ } $('#toast').classList.add('show'); setTimeout(() => $('#toast').classList.remove('show'), 2200); });
 updateCountdown();
 setInterval(updateCountdown, 1000);
+console.log('i hate random guy 1');
