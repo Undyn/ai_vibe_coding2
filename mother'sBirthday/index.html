@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff8f4" />
+  <meta name="description" content="Une petite surprise pleine de roses pour les 45 ans de maman." />
+  <title>Joyeux anniversaire, maman !</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-glow" aria-hidden="true"></div>
+  <div class="petal-layer" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="Retour à l’accueil">
+      <span class="brand-flower" aria-hidden="true">✿</span>
+      <span>Pour maman</span>
+    </a>
+    <a class="header-note" href="#surprise">Une surprise t’attend <span aria-hidden="true">↓</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil" aria-labelledby="hero-title">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow"><span class="eyebrow-line"></span> Une journée rien que pour toi</p>
+        <h1 id="hero-title">Joyeux<br />anniversaire,<br /><em>maman !</em></h1>
+        <p class="hero-text">Aujourd’hui, on célèbre la personne qui rend chaque jour un peu plus beau.</p>
+        <div class="age-stamp" aria-label="45 ans">
+          <span class="age-number">45</span>
+          <span class="age-label">ans<br />de toi</span>
+          <span class="age-sparkle" aria-hidden="true">✳</span>
+        </div>
+        <a class="hero-link" href="#surprise">Découvrir ta surprise <span aria-hidden="true">↘</span></a>
+      </div>
+
+      <div class="bouquet-wrap" aria-label="Bouquet de roses roses" role="img" data-reveal>
+        <span class="bouquet-orbit orbit-one" aria-hidden="true"></span>
+        <span class="bouquet-orbit orbit-two" aria-hidden="true"></span>
+        <svg class="bouquet" viewBox="0 0 480 530" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="rosePetal" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#f6a0ad" />
+              <stop offset="1" stop-color="#d94e70" />
+            </linearGradient>
+            <linearGradient id="roseLight" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#ffd1cc" />
+              <stop offset="1" stop-color="#ed7990" />
+            </linearGradient>
+            <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#83a27a" />
+              <stop offset="1" stop-color="#496b56" />
+            </linearGradient>
+            <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#f2d9c8" />
+              <stop offset="1" stop-color="#dfb7a4" />
+            </linearGradient>
+          </defs>
+          <g class="bouquet-stems" fill="none" stroke="#71896a" stroke-linecap="round" stroke-width="5">
+            <path d="M239 250C225 330 214 385 206 455" />
+            <path d="M240 245C258 330 276 389 281 455" />
+            <path d="M178 235C200 322 224 385 245 455" />
+            <path d="M303 238C278 324 249 385 235 455" />
+          </g>
+          <g class="leaves" fill="url(#leaf)">
+            <path d="M207 325c-50-56-91-22-65 9 21 24 48 13 65-9Z" />
+            <path d="M260 352c48-55 86-22 61 8-20 23-45 13-61-8Z" />
+            <path d="M221 390c-39-45-72-18-52 7 17 19 38 11 52-7Z" />
+            <path d="M258 413c34-43 67-19 48 6-16 20-35 11-48-6Z" />
+            <path d="M178 295c-30-45-58-25-42-1 13 19 30 12 42 1Z" />
+            <path d="M302 298c29-43 56-23 40 0-13 18-29 12-40 0Z" />
+          </g>
+          <g class="rose rose-back">
+            <g fill="url(#roseLight)">
+              <ellipse cx="176" cy="147" rx="25" ry="43" />
+              <ellipse cx="176" cy="147" rx="25" ry="43" transform="rotate(60 176 147)" />
+              <ellipse cx="176" cy="147" rx="25" ry="43" transform="rotate(120 176 147)" />
+            </g>
+            <circle cx="176" cy="147" r="20" fill="#c94d68" />
+            <path d="M165 148c8-16 24-10 20 1-3 8-13 6-11 0 2-5 8-3 6 1" fill="none" stroke="#f8c1b9" stroke-width="4" stroke-linecap="round" />
+          </g>
+          <g class="rose rose-center">
+            <g fill="url(#rosePetal)">
+              <ellipse cx="241" cy="111" rx="28" ry="48" />
+              <ellipse cx="241" cy="111" rx="28" ry="48" transform="rotate(60 241 111)" />
+              <ellipse cx="241" cy="111" rx="28" ry="48" transform="rotate(120 241 111)" />
+            </g>
+            <circle cx="241" cy="111" r="23" fill="#c73d62" />
+            <path d="M228 112c9-18 28-12 23 1-3 9-16 7-12 0 2-5 9-3 6 2" fill="none" stroke="#ffd0c7" stroke-width="4" stroke-linecap="round" />
+          </g>
+          <g class="rose rose-side">
+            <g fill="url(#roseLight)">
+              <ellipse cx="309" cy="157" rx="25" ry="42" />
+              <ellipse cx="309" cy="157" rx="25" ry="42" transform="rotate(60 309 157)" />
+              <ellipse cx="309" cy="157" rx="25" ry="42" transform="rotate(120 309 157)" />
+            </g>
+            <circle cx="309" cy="157" r="20" fill="#d64e70" />
+            <path d="M298 158c8-16 24-10 20 1-3 8-13 6-11 0 2-5 8-3 6 1" fill="none" stroke="#ffe0d8" stroke-width="4" stroke-linecap="round" />
+          </g>
+          <g class="rose rose-small">
+            <g fill="#f3a5a9">
+              <ellipse cx="133" cy="209" rx="19" ry="32" />
+              <ellipse cx="133" cy="209" rx="19" ry="32" transform="rotate(60 133 209)" />
+              <ellipse cx="133" cy="209" rx="19" ry="32" transform="rotate(120 133 209)" />
+            </g>
+            <circle cx="133" cy="209" r="15" fill="#d35a70" />
+            <path d="M126 209c6-11 17-7 14 1-2 6-9 4-7 0 1-3 5-2 4 1" fill="none" stroke="#ffe0d8" stroke-width="3" stroke-linecap="round" />
+          </g>
+          <g class="rose rose-small rose-small-right">
+            <g fill="#f3a5a9">
+              <ellipse cx="348" cy="211" rx="19" ry="32" />
+              <ellipse cx="348" cy="211" rx="19" ry="32" transform="rotate(60 348 211)" />
+              <ellipse cx="348" cy="211" rx="19" ry="32" transform="rotate(120 348 211)" />
+            </g>
+            <circle cx="348" cy="211" r="15" fill="#d35a70" />
+            <path d="M341 211c6-11 17-7 14 1-2 6-9 4-7 0 1-3 5-2 4 1" fill="none" stroke="#ffe0d8" stroke-width="3" stroke-linecap="round" />
+          </g>
+          <path d="M153 294 328 294 294 470Q240 499 186 470Z" fill="url(#paper)" />
+          <path d="M153 294q87 44 175 0" fill="none" stroke="#f9e9dc" stroke-width="6" />
+          <path d="M190 307q50 29 99 0l-14 40q-38 27-72 0Z" fill="#a74d62" />
+          <path d="M240 324c-34-31-54 2 0 29 54-27 34-60 0-29Z" fill="#d77d89" />
+          <path d="M240 324c-13 2-19 13 0 29 19-16 13-27 0-29Z" fill="#efb2a7" />
+          <g fill="#fff5ec" opacity=".8">
+            <circle cx="163" cy="117" r="3" /><circle cx="337" cy="104" r="4" />
+            <circle cx="373" cy="260" r="3" /><circle cx="102" cy="265" r="4" />
+          </g>
+        </svg>
+        <span class="bouquet-caption">Un bouquet pour toi</span>
+        <span class="floating-heart heart-one" aria-hidden="true">♡</span>
+        <span class="floating-heart heart-two" aria-hidden="true">✳</span>
+      </div>
+      <a class="scroll-cue" href="#petits-mots" aria-label="Défiler vers les petits mots">↓</a>
+    </section>
+
+    <section class="wishes-section" id="petits-mots" aria-labelledby="wishes-title">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">Pour tes 45 ans</p>
+        <h2 id="wishes-title">Tout ce que je te souhaite,<br /><em>et bien plus encore.</em></h2>
+      </div>
+      <div class="wishes-grid">
+        <article class="wish-card" data-reveal>
+          <span class="wish-icon" aria-hidden="true">♡</span>
+          <h3>Du bonheur</h3>
+          <p>Dans les petites choses, les grands projets et tous les jolis jours à venir.</p>
+        </article>
+        <article class="wish-card wish-card-featured" data-reveal>
+          <span class="wish-icon" aria-hidden="true">✿</span>
+          <h3>Une belle santé</h3>
+          <p>Pour profiter pleinement de chaque instant entourée de ceux qui t’aiment.</p>
+        </article>
+        <article class="wish-card" data-reveal>
+          <span class="wish-icon" aria-hidden="true">✧</span>
+          <h3>Beaucoup d’amour</h3>
+          <p>Aujourd’hui, demain, et chaque jour — avec des roses, évidemment.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card-section" id="surprise" aria-labelledby="card-title">
+      <div class="card-section-inner">
+        <div class="section-heading card-heading" data-reveal>
+          <p class="eyebrow">Une dernière petite surprise</p>
+          <h2 id="card-title">Quelques mots<br /><em>du cœur.</em></h2>
+          <p class="card-instruction">Clique sur la carte pour découvrir ton message.</p>
+        </div>
+
+        <div class="card-stage" data-reveal>
+          <div class="card-shadow" aria-hidden="true"></div>
+          <button class="birthday-card" id="open-card" type="button" aria-expanded="false" aria-controls="birthday-message">
+            <span class="card-cover-flower" aria-hidden="true">✿</span>
+            <span class="card-cover-label">Pour la meilleure maman</span>
+            <span class="card-cover-title">Joyeux<br />anniversaire !</span>
+            <span class="card-cover-rose" aria-hidden="true">🌹</span>
+            <span class="card-open-hint">Ouvre-moi <span aria-hidden="true">↗</span></span>
+          </button>
+          <article class="birthday-message" id="birthday-message" hidden aria-labelledby="message-title">
+            <p class="message-kicker" id="message-title">Pour toi, maman ♡</p>
+            <p class="message-copy">bonne anniversaire maman, je te souhaite le meilleur bonheur pour toi, une bonne santé, je fais de mon mieux en se moment pour bien travailler et être aussi bien que augustin en tant que note</p>
+            <p class="message-signoff">Je t’aime fort <span aria-hidden="true">♥</span></p>
+            <button class="close-card" id="close-card" type="button">Refermer la carte <span aria-hidden="true">↻</span></button>
+          </article>
+        </div>
+        <p class="card-footer-note">Avec tout mon amour, aujourd’hui et toujours</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span aria-hidden="true">✿</span>
+    <p>Fait avec amour pour maman</p>
+    <span aria-hidden="true">✿</span>
+  </footer>
+</body>
+</html>
